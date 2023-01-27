@@ -1,0 +1,15 @@
+:root{
+    --green:#00E77f;
+    --white:#3d3d3d;
+    --light-white:#4b4b4b;
+    --black:#fff;
+    --light-bg:rgb(243, 245, 243);
+}
+#themeSelect{
+    background:lightgreen;
+    color: var(--black);
+}
+.option1{
+    background: var(--white);
+    color: var(--green);
+}
