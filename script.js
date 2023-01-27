@@ -81,7 +81,7 @@ var swiper = new Swiper(".course-silder", {
     function initTheme(){
         const themeSelect = document.getElementById('themeSelect');
         const themeStylesheetLink=document.getElementById('themeStylesheetLink');
-        const currentTheme =localStorage.getItem("theme")||'default';
+     
         function activeTheme(themeName){
             themeStylesheetLink.setAttribute('href',`css/themes/${themeName}.css`)
         }
@@ -89,10 +89,10 @@ var swiper = new Swiper(".course-silder", {
             'change',
             ()=>{
                 activeTheme(themeSelect.value);
-                localStorage.setItem("theme",themeSelect.value)
+             
             }
         );
 
-        activeTheme(currentTheme);
+        
     }
     initTheme();  
